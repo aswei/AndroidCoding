@@ -1,13 +1,17 @@
 package cn.com.coding.androidcoding;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import cn.com.coding.androidcoding.base.BaseAppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseAppCompatActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getContentViewLayoutID() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initViewsAndEvents() {
+
     }
 }
